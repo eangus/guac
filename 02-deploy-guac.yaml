@@ -10,7 +10,7 @@ spec:
   selector:
     matchLabels:
       app: guac
-  replicas: 3
+  replicas: 1
   strategy:
     type: Recreate
   template:
