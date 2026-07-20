@@ -2,15 +2,15 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: guacd
-  namespace: guacd
+  name: guac
+  namespace: guac
   labels:
-    app: guacd
+    app: guac
 spec:
   ports:
     - name: guac-port
       port: 8080
       # targetPort: 8080
   selector:
-    app: guacd
+    app: guac
   # type: LoadBalancer

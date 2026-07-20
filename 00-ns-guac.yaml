@@ -2,9 +2,9 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: guacd
+  name: guac
   labels:
-    app: guacd
+    app: guac
 spec:
   finalizers:
     - kubernetes

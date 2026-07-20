@@ -2,24 +2,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: guacd
-  namespace: guacd
+  name: guac
+  namespace: guac
   labels:
-    app: guacd
+    app: guac
 spec:
   selector:
     matchLabels:
-      app: guacd
+      app: guac
   replicas: 1
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        app: guacd
+        app: guac
     spec:
       containers:
-        - name: guacd
+        - name: guac
           image: oznu/guacamole
           ports:
             - containerPort: 8080
